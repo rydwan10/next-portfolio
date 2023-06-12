@@ -1,0 +1,9 @@
+.gradientBlob {
+
+    width: 516px;
+    height: 505px;
+    top: 223px;
+
+    background: linear-gradient(220.62deg, #2068F5 6.21%, rgba(147, 78, 201, 0.465689) 49.57%, rgba(134, 49, 201, 0.03) 87.37%);
+    filter: blur(100px);
+}
