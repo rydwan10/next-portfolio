@@ -1,0 +1,20 @@
+.pills {
+    width: 267px;
+    height: 10px;
+    background: linear-gradient(269.07deg, #406AFF 2.38%, rgba(192, 85, 242, 0.45) 79.73%);
+    border-radius: 100px;
+    animation: animatePills 3s ease-in-out infinite alternate;
+    background-size: 500% auto;
+}
+
+@keyframes animatePills {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+

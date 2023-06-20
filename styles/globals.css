@@ -22,6 +22,7 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+    scroll-behavior: smooth;
   }
   body {
     color: white;

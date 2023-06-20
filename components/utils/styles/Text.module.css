@@ -1,0 +1,44 @@
+.textGradient {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 89px;
+
+    background-size: 200% 200%;
+    background: linear-gradient(358deg, #42BBFF 37.99%, rgba(208, 77, 254, 0.5) 64.07%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+}
+
+
+.sectionText {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 89px;
+    font-size: 54px;
+    background-size: 200% 200%;
+    background: linear-gradient(358deg, #42BBFF 37.99%, rgba(208, 77, 254, 0.5) 64.07%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.linkText {
+    color: #42BBFF;
+}
+

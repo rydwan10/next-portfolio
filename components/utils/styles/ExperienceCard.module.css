@@ -1,0 +1,34 @@
+.cardContainer {
+    padding: 35px 30px;
+    border-radius: 28px;
+    box-sizing: border-box;;
+    /*width: 630px;*/
+    /*height: 584px;*/
+    background: #1F2639;
+    border: 2px solid #693D8D;
+    max-width: 550px;
+}
+
+.experienceDescContainer {
+    background: #1C2233;
+    border-radius: 12px;
+    padding: 12px 28px;
+}
+
+.year {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+.subTitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}

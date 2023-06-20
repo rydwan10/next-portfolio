@@ -1,37 +1,9 @@
-.textHeroGradient {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 65px;
-    line-height: 89px;
-
-    background-size: 200% 200%;
-    background: linear-gradient(358deg, #42BBFF 37.99%, rgba(208, 77, 254, 0.5) 64.07%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 3s ease-in-out infinite alternate;
-}
 
 .textHeroBase {
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
     line-height: 87px;
-
-    color: #FFFFFF;
-}
-
-
-@keyframes textShine {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
 }
 
 .heroWrapper {
