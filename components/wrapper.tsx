@@ -2,7 +2,6 @@ import React, { ReactComponentElement } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./navbar";
-import Hero from "./hero";
 import style from "./styles/Wrapper.module.css"
 
 
@@ -27,7 +26,6 @@ export default function Wrapper({ children, ...customMeta }: paramsType): ReactC
             <Head>
                 <meta name="robots" content="follow, index" />
                 <meta content={meta.description} name="description" />
-                // TODO make change to personal website link
                 <meta
                     property="og:url"
                     content={`https://yourwebsite.com${router.asPath}`}
