@@ -17,7 +17,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 89px;
-    font-size: 54px;
     background-size: 200% 200%;
     background: linear-gradient(358deg, #42BBFF 37.99%, rgba(208, 77, 254, 0.5) 64.07%);
     -webkit-background-clip: text;
@@ -41,4 +40,3 @@
 .linkText {
     color: #42BBFF;
 }
-

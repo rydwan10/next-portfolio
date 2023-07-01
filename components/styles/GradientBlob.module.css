@@ -1,9 +1,23 @@
 .gradientBlob {
-
-    width: 516px;
-    height: 505px;
-    top: 223px;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 250px;
+    right: 0px;
 
     background: linear-gradient(220.62deg, #2068F5 6.21%, rgba(147, 78, 201, 0.465689) 49.57%, rgba(134, 49, 201, 0.03) 87.37%);
     filter: blur(100px);
+
+    @media (max-width: 640px) {
+        width: 140px;
+        /* Font size on small screens */
+    }
+
+    /* Medium screens (min-width: 641px) and (max-width: 1024px) */
+    @media (min-width: 641px) and (max-width: 1330px) {
+        width: 210px;
+        /* Font size on medium screens */
+    }
+
+
 }

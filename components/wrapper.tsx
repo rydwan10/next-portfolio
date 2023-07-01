@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./navbar";
 import style from "./styles/Wrapper.module.css"
+import ScrollToTopButton from "./utils/scroll_to_top";
 
 
 interface paramsType {
@@ -44,7 +45,8 @@ export default function Wrapper({ children, ...customMeta }: paramsType): ReactC
 
 
             <Navbar />
-            <div className="px-">{children}</div>
+            <ScrollToTopButton />
+            <div>{children}</div>
             {/*<Footer />*/}
 
         </div>

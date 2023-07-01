@@ -1,13 +1,17 @@
-
 .textHeroBase {
     font-style: normal;
     font-weight: 300;
-    font-size: 64px;
-    line-height: 87px;
-}
+    line-height: 1;
+    color: white;
 
-.heroWrapper {
-    margin-top: 150px;
-    display: flex;
-    justify-content: space-between;
+    @media (max-width: 640px) {
+        font-size: 42px;
+
+        /* Font size on small screens */
+    }
+
+    @media (min-width: 641px) {
+        font-size: 64px;
+        /* Font size on larger screens */
+    }
 }

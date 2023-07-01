@@ -1,14 +1,15 @@
 import '../styles/globals.css'
-import type {AppProps} from 'next/app'
-import {ThemeProvider} from "next-themes";
-import {DevSupport} from "@react-buddy/ide-toolbox-next";
-import {ComponentPreviews, useInitial} from "../components/dev";
+import type { AppProps } from 'next/app'
+    ;
+import { DevSupport } from "@react-buddy/ide-toolbox-next";
+import { ComponentPreviews, useInitial } from "../components/dev";
+import { ThemeProvider } from '@material-tailwind/react';
 
-function MyApp({Component, pageProps}: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <ThemeProvider defaultTheme="light" attribute="class">
+        <ThemeProvider>
             <DevSupport ComponentPreviews={ComponentPreviews}
-                        useInitialHook={useInitial}
+                useInitialHook={useInitial}
             >
                 <Component {...pageProps} />
             </DevSupport>

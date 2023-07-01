@@ -19,8 +19,8 @@ const Social: React.FC = () => {
             <a href="https://www.github.com/rydwan10" target="_blank" rel="noopener noreferrer">
                 <Image
                     src="/assets/svg/ic_github.svg"
-                    width={38}
-                    height={38}
+                    width={32}
+                    height={32}
                     alt="LinkedIn"
                     className="mr-2"
                 />
@@ -29,8 +29,8 @@ const Social: React.FC = () => {
             <a href="mailto:rydwan.dev@gmail.com">
                 <Image
                     src="/assets/svg/ic_gmail.svg"
-                    width={47}
-                    height={47}
+                    width={40}
+                    height={40}
                     alt="LinkedIn"
                     className="mr-2"
                 />
