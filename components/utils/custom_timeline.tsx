@@ -18,7 +18,7 @@ const useShowInLgOnly = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsLgScreen(window.innerWidth >= 1024);
+            setIsLgScreen(window.innerWidth >= 960);
         };
 
         // Add event listener for window resize

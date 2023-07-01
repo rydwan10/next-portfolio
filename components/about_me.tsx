@@ -15,6 +15,8 @@ const AboutMe = () => {
             <div className={style.imageContainer}>
                 <div className={style.imageGradient} />
                 <Image
+                    width={300}
+                    height={200}
                     className={`${style.profilePicture} md:w-60 w-44`}
                     src="/assets/svg/about_me_picture.png"
                     alt="Muhammad Rydwan" />
