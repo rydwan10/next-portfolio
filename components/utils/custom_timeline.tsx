@@ -13,7 +13,7 @@ interface ItemTimelineProps {
     isEven: boolean;
 }
 
-const showInLgOnly = () => {
+const useShowInLgOnly = () => {
     const [isLgScreen, setIsLgScreen] = useState(false);
 
     useEffect(() => {
@@ -67,7 +67,7 @@ const TimelineItem: React.FC<ItemTimelineProps> = ({ experience, isEven }) => {
     return (
         <div className={isEven ? rightTimelineClass : leftTimelineClass}>
             {/* Bullet */}
-            {showInLgOnly() && <div className="order-1 w-5/12"></div>}
+            {useShowInLgOnly() && <div className="order-1 w-5/12"></div>}
             <div className="hidden md:hidden lg:block z-20 items-center order-1 bg-purple-500 shadow-xl w-8 h-8 rounded-full">
             </div>
 
