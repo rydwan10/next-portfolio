@@ -31,8 +31,8 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
                     </Typography>
                     <Spacer height={23} />
                     <div className="flex flex-row justify-center lg:justify-start">
-                        {project.stackLogo.map((item) => {
-                            return <img src={item} alt="stack logo" className="mr-8" />;
+                        {project.stackLogo.map((item, index) => {
+                            return <img key={index} src={item} alt="stack logo" className="mr-8" />;
                         })}
                     </div>
                     <Spacer height={45} />
