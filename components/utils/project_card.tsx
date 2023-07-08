@@ -9,7 +9,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
     }
 
     return (
-        <div className="bg-dark-main rounded-3xl shadow-xl w-auto px-6 py-9 border border-purple-500 max-w-4abouxl">
+        <div className="bg-dark-main rounded-3xl shadow-xl w-auto px-6 py-9 border border-purple-500 max-w-7xl">
             <div className="lg:flex justify-center">
                 {/* Image */}
                 <div className="lg:w-1/2 flex justify-center pr-4">
