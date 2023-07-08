@@ -8,7 +8,15 @@ export interface IExperience {
     experienceDetail: string[],
 }
 
-export const data: IExperience[] = [
+export interface IProject {
+    id: number,
+    stackLogo: string[],
+    desc: string,
+    repoUrl: string,
+    projectImage: string,
+}
+
+export const experienceData: IExperience[] = [
     {
         id: 1,
         year: 2020,
@@ -23,7 +31,7 @@ export const data: IExperience[] = [
     {
         id: 2,
         year: 2021,
-        title: "Andal Softwrae",
+        title: "Andal Software",
         subTitle: "Fulltime Fullstack Developer",
         experienceDetail: [
             "Contribute to developing API using ASP .NET for HRIS application",
@@ -40,5 +48,20 @@ export const data: IExperience[] = [
             "Contribute to developingnew product that Reku will release using Flutter",
             "Testing and bug fixing the Reku(Rekeningku) mobile apps",
         ]
+    }
+]
+
+
+export const projectData: IProject[] = [
+    {
+        id: 1,
+        stackLogo: [
+            "/assets/svg/stack/flutter.svg",
+            "/assets/svg/stack/laravel.svg",
+            "/assets/svg/stack/firebase.svg",
+        ],
+        desc: "Shamo is a Point of Sales application that aims to sell various types of shoes. Shamo is built using Flutter as the mobile frontend, Laravel as the API service, and Firebase for real-time chat features.",
+        repoUrl: "https://github.com/rydwan10/fullstack-laravel-flutter-e-commerce",
+        projectImage: "/assets/png/shamo.png"
     }
 ]

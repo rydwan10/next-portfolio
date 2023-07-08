@@ -2,7 +2,7 @@ import React from "react";
 import textStyle from "./utils/styles/Text.module.css";
 import Spacer from "./utils/spacer";
 
-import { data } from "./data/data";
+import { experienceData } from "./data/data";
 
 import {
     Typography,
@@ -15,10 +15,10 @@ const Experience: React.FC = () => {
     return (
         <div id="experience">
             <Typography className={`${textStyle.sectionText} text-center md:text-5xl text-4xl`}>
-                Experience
+                Experiences
             </Typography>
             <Spacer height={100} />
-            <CustomTimeline experiences={data} />
+            <CustomTimeline experiences={experienceData} />
         </div>
     )
 }

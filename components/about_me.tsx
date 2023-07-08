@@ -7,7 +7,7 @@ import { Typography } from "@material-tailwind/react";
 
 const AboutMe = () => {
     return (
-        <div className="flex flex-col content-center items-center px-4" id="about-me">
+        <div className="flex flex-col content-center items-center px-6" id="about-me">
             <Typography className={`${textStyle.sectionText} md:text-5xl text-4xl`}>
                 About Me
             </Typography>
@@ -23,12 +23,12 @@ const AboutMe = () => {
             </div>
             <Spacer height={75} />
             <p className="leading-loos md:leading-loose text-white font-light md:text-3xl text-xl text-center">
-                Currently I(&apos;)m a Mobile Developer at <a className={textStyle.linkText} href="https://www.reku.id/"
+                Currently I&apos;m a Mobile Developer at <a className={textStyle.linkText} href="https://www.reku.id/"
                     target="_blank" rel="noopener noreferrer">Reku.id</a> a
                 cryptocurrency marketplace based in South Jakarta,
-                Indonesia. I(&apos;)m in love with programming since in vocational high school and continue in depth in
+                Indonesia. I&apos;m in love with programming since in vocational high school and continue in depth in
                 <a className={textStyle.linkText} href="https://www.dumbways.id/"
-                    target="_blank" rel="noopener noreferrer"> Dumbways.id</a> bootcamp. Previously, I(&apos;)m a Fullstack Developer developing Fullstack Application using
+                    target="_blank" rel="noopener noreferrer"> Dumbways.id</a> bootcamp. Previously, I&apos;m a Fullstack Developer developing Fullstack Application using
                 Angular and ASP .NET Web API.
             </p>
             <Spacer height={50} />
