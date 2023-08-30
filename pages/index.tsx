@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     return (
         <Wrapper customMeta={meta}>
             <Hero />
-            <Spacer height={330} />
+            {/* <Spacer height={330} /> */}
             <AboutMe />
             <Spacer height={250} />
             <Experience />
