@@ -18,7 +18,7 @@
     font-weight: 600;
     line-height: 89px;
     background-size: 200% 200%;
-    background: linear-gradient(358deg, #42BBFF 37.99%, rgba(208, 77, 254, 0.5) 64.07%);
+    background: linear-gradient(358deg, #42BBFF 37.99%, rgba(208, 77, 254, 0.502) 64.07%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,4 +39,8 @@
 
 .linkText {
     color: #42BBFF;
+}
+
+.purpleText {
+    color: #d664ffe3;
 }

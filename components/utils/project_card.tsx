@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-tailwind/react"
+import { Typography } from "@material-tailwind/react"
 import Spacer from "./spacer"
 import { IProject } from "../data/data"
 
@@ -14,7 +14,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
                 {/* Image */}
                 <div className="lg:w-1/2 flex justify-center pr-4">
                     <img
-                        className="h-auto w-full object-cover lg:h-full lg:w-full bg-center"
+                        className="h-auto w-full object-contain lg:h-full lg:w-full bg-center"
                         src={project.projectImage}
                         alt="Image"
                     />
@@ -23,7 +23,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
                 {/* Content */}
                 <div className="lg:w-1/2 flex flex-col justify-center">
                     <Typography as="h3" className="mb-3 font-semibold text-white text-3xl text-center lg:text-left">
-                        Shamo
+                        {project.projectName}
                     </Typography>
                     <Spacer height={30} />
                     <Typography as="p" className="text-white font-medium text-lg text-center lg:text-left">

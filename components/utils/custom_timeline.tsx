@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react';
 import { IExperience } from '../data/data';
 import { Typography } from '@material-tailwind/react';
+import textStyle from "./styles/Text.module.css"
+
 
 
 interface TimelineProps {
@@ -63,6 +65,11 @@ const TimelineItem: React.FC<ItemTimelineProps> = ({ experience, isEven }) => {
     const rightTimelineClass = "mb-8 flex justify-between sm:flex-col md:flex-col lg:flex-row items-center w-full right-timeline";
     const leftTimelineClass = "mb-8 flex justify-between sm:flex-col md:flex-col lg:flex-row-reverse items-center w-full left-timeline";
 
+    function handleOnClickTitle(url: string) {
+        if (url) {
+            window.open(url, '_blank');
+        }
+    }
 
     return (
         <div className={isEven ? rightTimelineClass : leftTimelineClass}>
@@ -74,8 +81,13 @@ const TimelineItem: React.FC<ItemTimelineProps> = ({ experience, isEven }) => {
 
             {/* Content */}
             <div className="order-1 bg-dark-main rounded-3xl shadow-xl w-auto sm:w-auto md:w-auto lg:w-5/12 px-6 py-9 border border-purple-500">
-                <h3 className="mb-3 font-semibold text-white text-3xl">{experience.year}</h3>
-                <h3 className="mb-1 font-semibold text-white text-3xl">{experience.title}</h3>
+                <h3 className={`mb-3 font-semibold text-3xl ${textStyle.purpleText}`}>{experience.year}</h3>
+
+                <a className={`mb-1 font-semibold text-3xl ${textStyle.linkText}`} href={experience.website} target="_blank" rel="noopener noreferrer">
+                    {experience.title}
+                </a>
+
+
                 <h3 className="mb-14 font-light text-white text-2xl">{experience.subTitle}</h3>
 
                 {experience.experienceDetail.map((item, index) => {

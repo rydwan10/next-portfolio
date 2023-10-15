@@ -36,7 +36,13 @@ const Social: React.FC = () => {
                 />
             </a>
 
+            <a href="/assets/pdf/muhammad-rydwan-cv.pdf" target="_blank" rel="noopener noreferrer" className="rounded-full border-2 border-purple-500 px-4 py-2 flex items-center space-x-2 text-white">
+                <span className="mr-2">Download CV</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-blue-500">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
 
+            </a>
         </div>
     )
 }

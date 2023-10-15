@@ -8,7 +8,7 @@ import Spacer from "./utils/spacer";
 
 const Hero: React.FC = () => {
     return (
-        <div className="mt-24 lg:mt-36 px-8 lg:px-14 h-screen">
+        <div className="mt-24 lg:mt-44` px-8 lg:px-14 h-screen">
             <div>
                 <p className={`${textStyle.textGradient} ${mainStyle.textHeroBase} font-medium`}>Hi,</p>
                 <p className={`${mainStyle.textHeroBase}`}>

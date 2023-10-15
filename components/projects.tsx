@@ -16,7 +16,12 @@ const Projects: React.FC = () => {
                 {
                     projectData.map((item) => {
                         return (
-                            <ProjectCard key={item.id} project={item} />
+                            <>
+                                <ProjectCard key={item.id} project={item} />
+                                <Spacer height={58} />
+                            </>
+
+
                         )
                     })
                 }
