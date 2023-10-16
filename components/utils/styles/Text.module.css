@@ -1,7 +1,7 @@
 .textGradient {
     font-style: normal;
     font-weight: 600;
-    line-height: 89px;
+    /* line-height: 89px; */
 
     background-size: 200% 200%;
     background: linear-gradient(358deg, #42BBFF 37.99%, rgba(208, 77, 254, 0.5) 64.07%);

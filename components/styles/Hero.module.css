@@ -1,7 +1,7 @@
 .textHeroBase {
     font-style: normal;
     font-weight: 300;
-    line-height: 1;
+    /* line-height: 1; */
     color: white;
 
     @media (max-width: 640px) {

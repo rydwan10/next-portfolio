@@ -22,7 +22,7 @@ const AboutMe = () => {
                     alt="Muhammad Rydwan" />
             </div>
             <Spacer height={75} />
-            <p className="leading-loos md:leading-loose text-white font-light md:text-3xl text-xl text-center">
+            <p className="leading-loose md:leading-relaxed text-white font-light text-base md:text-xl lg:text-2xl text-center">
                 Currently I&apos;m a Mobile Developer at <a className={textStyle.linkText} href="https://www.reku.id/"
                     target="_blank" rel="noopener noreferrer">Reku.id</a> a
                 cryptocurrency marketplace based in South Jakarta,
