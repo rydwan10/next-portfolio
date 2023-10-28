@@ -75,7 +75,7 @@ const TimelineItem: React.FC<ItemTimelineProps> = ({ experience, isEven }) => {
         <div className={isEven ? rightTimelineClass : leftTimelineClass}>
             {/* Bullet */}
             {useShowInLgOnly() && <div className="order-1 w-5/12"></div>}
-            <div className="hidden md:hidden lg:block z-20 items-center order-1 bg-purple-500 shadow-xl w-8 h-8 rounded-full">
+            <div className="hidden md:hidden lg:block z-20 items-center order-1 bg-purple-400 border-4 border-purple-800 shadow-xl w-8 h-8 rounded-full">
             </div>
 
 
