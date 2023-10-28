@@ -8,18 +8,25 @@ import {
     Typography,
 } from "@material-tailwind/react";
 import CustomTimeline from "./utils/custom_timeline";
+import PillsDivider from "./utils/pills_divider";
 
 
 
 const Experience: React.FC = () => {
     return (
-        <div id="experience">
-            <Typography className={`${textStyle.sectionText} text-center md:text-5xl text-4xl`}>
-                Experiences
-            </Typography>
+        <>
+            <div id="experience" >
+                <Typography className={`${textStyle.sectionText} text-center md:text-5xl text-4xl`}>
+                    Experiences
+                </Typography>
+                <Spacer height={100} />
+                <CustomTimeline experiences={experienceData} />
+            </div>
             <Spacer height={100} />
-            <CustomTimeline experiences={experienceData} />
-        </div>
+            <div className="flex justify-center">
+                <PillsDivider />
+            </div>
+        </>
     )
 }
 

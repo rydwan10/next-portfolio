@@ -22,16 +22,19 @@ const AboutMe = () => {
                     alt="Muhammad Rydwan" />
             </div>
             <Spacer height={75} />
-            <p className="leading-loose md:leading-relaxed text-white font-light text-base md:text-xl lg:text-2xl text-center">
-                Currently I&apos;m a Mobile Developer at <a className={textStyle.linkText} href="https://www.reku.id/"
-                    target="_blank" rel="noopener noreferrer">Reku.id</a> a
-                cryptocurrency marketplace based in South Jakarta,
-                Indonesia. I&apos;m in love with programming since in vocational high school and continue in depth in
-                <a className={textStyle.linkText} href="https://www.dumbways.id/"
-                    target="_blank" rel="noopener noreferrer"> Dumbways.id</a> bootcamp. Previously, I&apos;m a Fullstack Developer developing Fullstack Application using
-                Angular and ASP .NET Web API.
-            </p>
-            <Spacer height={50} />
+            <div className="xl:px-64 px-12">
+                <p className="leading-loose md:leading-relaxed text-white font-light text-base md:text-xl lg:text-2xl text-center">
+                    Currently I&apos;m a Mobile Developer at <a className={textStyle.linkText} href="https://www.reku.id/"
+                        target="_blank" rel="noopener noreferrer">Reku.id</a> a
+                    cryptocurrency marketplace based in South Jakarta,
+                    Indonesia. I&apos;m in love with programming since in vocational high school and continue in depth in
+                    <a className={textStyle.linkText} href="https://www.dumbways.id/"
+                        target="_blank" rel="noopener noreferrer"> Dumbways.id</a> bootcamp. Previously, I&apos;m a Fullstack Developer developing Fullstack Application using
+                    Angular and ASP .NET Web API.
+                </p>
+            </div>
+
+            <Spacer height={100} />
             <PillsDivider />
         </div>
     );

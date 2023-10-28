@@ -7,6 +7,8 @@ import AboutMe from "../components/about_me";
 import Experience from "../components/experience";
 import TimelineTest from '../components/utils/custom_timeline';
 import Projects from '../components/projects';
+import Contact from '../components/contact';
+import Footer from '../components/footer';
 
 const Home: NextPage = () => {
     const meta = {}
@@ -20,6 +22,10 @@ const Home: NextPage = () => {
             <Experience />
             <Spacer height={250} />
             <Projects />
+            <Spacer height={250} />
+            <Contact />
+            <Spacer height={250} />
+            <Footer />
         </Wrapper>
     )
 }
