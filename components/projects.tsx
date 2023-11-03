@@ -5,6 +5,7 @@ import { projectData } from "./data/data"
 import ProjectCard from "./utils/project_card"
 import FadeInFromBottomOnScroll from "./utils/fade_in_from_bottom_on_scroll"
 import FadeInFromSideOnScroll from "./utils/fade_in_from_side_on_scroll"
+import Image from "next/image"
 
 
 const Projects: React.FC = () => {
@@ -22,8 +23,8 @@ const Projects: React.FC = () => {
                         let isEven = ((index + 1) % 2) == 0 ? true : false;
 
                         return (
-                            <FadeInFromSideOnScroll duration={0.5} direction={isEven ? 'left' : 'right'}>
-                                <ProjectCard key={item.id} project={item} />
+                            <FadeInFromSideOnScroll key={item.id} duration={0.5} direction={isEven ? 'left' : 'right'}>
+                                <ProjectCard project={item} />
                                 <Spacer height={58} />
                             </FadeInFromSideOnScroll>
                         )
@@ -36,7 +37,7 @@ const Projects: React.FC = () => {
                         }}
                         className="border-2 border-blue-400 inline-flex items-center justify-center px-4 py-2 rounded-full bg-dark-experienceDetails text-white focus:outline-blue-500 focus:ring-2 focus:ring-blue-500 lg:max-w-md"
                     >
-                        <img className="w-6 h-6 mr-2" src="assets/svg/ic_github.svg" alt="Image" />
+                        <Image className="w-6 h-6 mr-2" src="assets/svg/ic_github.svg" alt="Image" />
                         <span>More projets on Github</span>
                     </button>
                 </div>

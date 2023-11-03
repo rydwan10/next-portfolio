@@ -51,10 +51,10 @@ const CustomTimeline: React.FC<TimelineProps> = ({ experiences }) => {
                     let isEven = ((index + 1) % 2) == 0 ? true : false;
 
                     if (isEven) {
-                        return (<FadeInFromSideOnScroll duration={0.5} direction='left'><TimelineItem key={item.id} experience={item} isEven={true} /></FadeInFromSideOnScroll>)
+                        return (<FadeInFromSideOnScroll key={item.id} duration={0.5} direction='left'><TimelineItem experience={item} isEven={true} /></FadeInFromSideOnScroll>)
                     }
 
-                    return (<FadeInFromSideOnScroll duration={0.5} direction='right'><TimelineItem key={item.id} experience={item} isEven={false} /></FadeInFromSideOnScroll>)
+                    return (<FadeInFromSideOnScroll key={item.id} duration={0.5} direction='right'><TimelineItem experience={item} isEven={false} /></FadeInFromSideOnScroll>)
                 })}
 
             </div>
