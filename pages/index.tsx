@@ -9,13 +9,16 @@ import TimelineTest from '../components/utils/custom_timeline';
 import Projects from '../components/projects';
 import Contact from '../components/contact';
 import Footer from '../components/footer';
+import { motion } from "framer-motion"
 
 const Home: NextPage = () => {
     const meta = {}
 
     return (
         <Wrapper customMeta={meta}>
+
             <Hero />
+
             {/* <Spacer height={330} /> */}
             <AboutMe />
             <Spacer height={250} />

@@ -3,25 +3,29 @@ import Spacer from "./utils/spacer"
 import textStyle from "./utils/styles/Text.module.css"
 import { projectData } from "./data/data"
 import ProjectCard from "./utils/project_card"
+import FadeInFromBottomOnScroll from "./utils/fade_in_from_bottom_on_scroll"
+import FadeInFromSideOnScroll from "./utils/fade_in_from_side_on_scroll"
 
 
 const Projects: React.FC = () => {
     return (
         <div className="flex flex-col content-center items-center px-4" id="projects">
-            <Typography className={`${textStyle.sectionText} md:text-5xl text-4xl`}>
-                Projects
-            </Typography>
+            <FadeInFromBottomOnScroll duration={0.5}>
+                <Typography className={`${textStyle.sectionText} md:text-5xl text-4xl`}>
+                    Projects
+                </Typography>
+            </FadeInFromBottomOnScroll>
             <Spacer height={120} />
             <div>
                 {
-                    projectData.map((item) => {
+                    projectData.map((item, index) => {
+                        let isEven = ((index + 1) % 2) == 0 ? true : false;
+
                         return (
-                            <>
+                            <FadeInFromSideOnScroll duration={0.5} direction={isEven ? 'left' : 'right'}>
                                 <ProjectCard key={item.id} project={item} />
                                 <Spacer height={58} />
-                            </>
-
-
+                            </FadeInFromSideOnScroll>
                         )
                     })
                 }
