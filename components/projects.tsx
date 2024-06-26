@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
                         }}
                         className="border-2 border-blue-400 inline-flex items-center justify-center px-4 py-2 rounded-full bg-dark-experienceDetails text-white focus:outline-blue-500 focus:ring-2 focus:ring-blue-500 lg:max-w-md"
                     >
-                        <Image className="w-6 h-6 mr-2" src="assets/svg/ic_github.svg" alt="Image" />
+                        <Image width={34} height={34} className="w-6 h-6 mr-2" src="/assets/svg/ic_github.svg" alt="Image" />
                         <span>More projets on Github</span>
                     </button>
                 </div>

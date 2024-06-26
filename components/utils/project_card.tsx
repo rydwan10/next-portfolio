@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react"
 import Spacer from "./spacer"
 import { IProject } from "../data/data"
+import Image from "next/image"
 
 
 const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
@@ -45,7 +46,7 @@ const ProjectCard: React.FC<{ project: IProject }> = ({ project }) => {
                         onClick={() => handleOnClick()}
                         className="border-2 border-blue-400 inline-flex items-center justify-center px-4 py-2 rounded-full bg-dark-experienceDetails text-white focus:outline-blue-500 focus:ring-2 focus:ring-blue-500 lg:max-w-sm"
                     >
-                        <img className="w-6 h-6 mr-2" src="assets/svg/ic_github.svg" alt="Image" />
+                        <Image width={32} height={32} className="w-6 h-6 mr-2" src="/assets/svg/ic_github.svg" alt="Image" />
                         <span>Repository</span>
                     </button>
                 </div>
